@@ -20,6 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.data}
+        <h1>randomness test</h1>
       </div>
     );
   }
