@@ -3,10 +3,11 @@ import MakeCard from '../MakeCard/MakeCard';
 import './MakesContainer.css';
 
 const MakesContainer = (props) => {
-  const { makes } = props;
-  const makesList = makes.map(make => (
+  const { data } = props;
+  const makesList = data.map(make => (
     <MakeCard
-      {...make}
+      Make={make.make_name}
+      Manufacturer={make.manufacturer}
       key={make.id}
     />
   ));
