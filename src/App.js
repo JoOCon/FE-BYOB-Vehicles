@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { Component } from 'react';
 import './App.css';
 
@@ -10,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch(`${process.env.REACT_APP_DATABASE_API_URL}/`)
+    fetch(process.env.REACT_APP_DATABASE_API_URL + '/')
       .then(response => response.json())
       .then(data => this.setState({ data }))
       .catch(error => console.log(error.message));
