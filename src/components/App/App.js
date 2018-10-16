@@ -20,7 +20,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SearchForm />
+        <header>
+          <SearchForm />
+        </header>
       </div>
     );
   }
