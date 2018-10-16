@@ -28,11 +28,41 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [],
+      "children": Array [
+        <UNDEFINED
+          name="garry"
+        />,
+        <UNDEFINED
+          name="billy"
+        />,
+      ],
       "className": "makes-cont",
     },
     "ref": null,
-    "rendered": Array [],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "name": "garry",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {},
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "name": "billy",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {},
+      },
+    ],
     "type": "section",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -41,11 +71,41 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [],
+        "children": Array [
+          <UNDEFINED
+            name="garry"
+          />,
+          <UNDEFINED
+            name="billy"
+          />,
+        ],
         "className": "makes-cont",
       },
       "ref": null,
-      "rendered": Array [],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "name": "garry",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {},
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "name": "billy",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {},
+        },
+      ],
       "type": "section",
     },
   ],
