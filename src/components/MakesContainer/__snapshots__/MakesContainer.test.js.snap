@@ -1,9 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MakesContainer should match snapshot 1`] = `
+exports[`MakesContainer should match snapshot with makes 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MakesContainer />,
+  Symbol(enzyme.__unrendered__): <MakesContainer
+    makes={
+      Array [
+        Object {
+          "name": "garry",
+        },
+        Object {
+          "name": "billy",
+        },
+      ]
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
