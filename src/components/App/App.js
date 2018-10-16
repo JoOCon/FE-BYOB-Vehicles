@@ -7,25 +7,39 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: [],
+      makes: [],
+      models: [],
     };
   }
 
   componentDidMount() {
+    this.fetchMakes();
+    this.fetchModels();
+  }
+
+  fetchMakes = () => {
     fetch(`${process.env.REACT_APP_DATABASE_API_URL}/api/v1/makes`)
       .then(response => response.json())
-      .then(data => this.setState({ data }))
+      .then(makes => this.setState({ makes }))
+      .catch(error => console.log(error.message));
+  }
+
+  fetchModels = () => {
+    fetch(`${process.env.REACT_APP_DATABASE_API_URL}/api/v1/models`)
+      .then(response => response.json())
+      .then(models => this.setState({ models }))
       .catch(error => console.log(error.message));
   }
 
   render() {
-    const { data } = this.state;
+    const { models } = this.state;
     return (
       <div className="App">
         <header>
+          <h1>Car Manager</h1>
           <SearchForm />
         </header>
-        <MakesContainer data={data} />
+        <MakesContainer models={models} />
       </div>
     );
   }
