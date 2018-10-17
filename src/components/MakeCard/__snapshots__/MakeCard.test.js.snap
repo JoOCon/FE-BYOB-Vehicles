@@ -1,20 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MakesContainer should match snapshot with makes 1`] = `
+exports[`MakeCard should match snapshot with makes 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MakesContainer
-    makes={
-      Array [
-        Object {
-          "name": "garry",
-        },
-        Object {
-          "name": "billy",
-        },
-      ]
-    }
-  />,
+  Symbol(enzyme.__unrendered__): <MakeCard />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -29,41 +18,37 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <UNDEFINED
-          name="garry"
-        />,
-        <UNDEFINED
-          name="billy"
-        />,
+        <h2 />,
+        <h2 />,
       ],
-      "className": "makes-cont",
+      "className": "make-card-cont",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "name": "garry",
+          "children": undefined,
         },
         "ref": null,
         "rendered": null,
-        "type": Object {},
+        "type": "h2",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "name": "billy",
+          "children": undefined,
         },
         "ref": null,
         "rendered": null,
-        "type": Object {},
+        "type": "h2",
       },
     ],
-    "type": "section",
+    "type": "article",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -72,41 +57,37 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <UNDEFINED
-            name="garry"
-          />,
-          <UNDEFINED
-            name="billy"
-          />,
+          <h2 />,
+          <h2 />,
         ],
-        "className": "makes-cont",
+        "className": "make-card-cont",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "name": "garry",
+            "children": undefined,
           },
           "ref": null,
           "rendered": null,
-          "type": Object {},
+          "type": "h2",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "name": "billy",
+            "children": undefined,
           },
           "ref": null,
           "rendered": null,
-          "type": Object {},
+          "type": "h2",
         },
       ],
-      "type": "section",
+      "type": "article",
     },
   ],
   Symbol(enzyme.__options__): Object {
