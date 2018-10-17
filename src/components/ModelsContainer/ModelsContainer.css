@@ -1,0 +1,4 @@
+.makes-cont {
+  display: flex;
+  overflow: scroll;
+}
