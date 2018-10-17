@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MakeCard from './MakeCard';
+import Card from './Card';
 
-describe('MakeCard', () => {
+describe('Card', () => {
   it('should match snapshot with makes', () => {
-    const wrapper = shallow(<MakeCard />);
+    const wrapper = shallow(<Card />);
 
     expect(wrapper).toMatchSnapshot();
   });

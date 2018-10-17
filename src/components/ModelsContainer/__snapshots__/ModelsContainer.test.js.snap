@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MakesContainer should match snapshot with makes 1`] = `
+exports[`ModelsContainer should match snapshot with models 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MakesContainer
-    makes={
+  Symbol(enzyme.__unrendered__): <ModelsContainer
+    models={
       Array [
         Object {
           "name": "garry",
@@ -29,10 +29,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <UNDEFINED
+        <Card
           name="garry"
         />,
-        <UNDEFINED
+        <Card
           name="billy"
         />,
       ],
@@ -43,24 +43,24 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "name": "garry",
         },
         "ref": null,
         "rendered": null,
-        "type": Object {},
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "name": "billy",
         },
         "ref": null,
         "rendered": null,
-        "type": Object {},
+        "type": [Function],
       },
     ],
     "type": "section",
@@ -72,10 +72,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <UNDEFINED
+          <Card
             name="garry"
           />,
-          <UNDEFINED
+          <Card
             name="billy"
           />,
         ],
@@ -86,24 +86,24 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "name": "garry",
           },
           "ref": null,
           "rendered": null,
-          "type": Object {},
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "name": "billy",
           },
           "ref": null,
           "rendered": null,
-          "type": Object {},
+          "type": [Function],
         },
       ],
       "type": "section",
