@@ -55,6 +55,7 @@ class AddModel extends Component {
     };
 
     this.postNewModel(model);
+    this.props.updateModels();
   }
 
   postNewModel = (model) => {
