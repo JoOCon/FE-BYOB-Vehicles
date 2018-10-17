@@ -1,0 +1,424 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddModel should match snapshot with models 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AddModel />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <select
+          name="makeId"
+          onChange={[Function]}
+        />,
+        <input
+          name="modelName"
+          onChange={[Function]}
+          placeholder="Model Name"
+          required={true}
+          type="text"
+          value=""
+        />,
+        <input
+          name="body"
+          onChange={[Function]}
+          placeholder="Body"
+          required={true}
+          type="text"
+          value=""
+        />,
+        <input
+          name="engine"
+          onChange={[Function]}
+          placeholder="Engine"
+          required={true}
+          type="text"
+          value=""
+        />,
+        <input
+          name="topSpeed"
+          onChange={[Function]}
+          placeholder="Top Speed"
+          required={true}
+          type="number"
+          value=""
+        />,
+        <input
+          name="hP"
+          onChange={[Function]}
+          placeholder="HP"
+          required={true}
+          type="number"
+          value=""
+        />,
+        <input
+          name="transmission"
+          onChange={[Function]}
+          placeholder="Transmission"
+          required={true}
+          type="text"
+          value=""
+        />,
+        <button
+          className="add-model-btn"
+          disabled={true}
+        >
+          SUBMIT
+        </button>,
+      ],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "name": "makeId",
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "modelName",
+          "onChange": [Function],
+          "placeholder": "Model Name",
+          "required": true,
+          "type": "text",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "body",
+          "onChange": [Function],
+          "placeholder": "Body",
+          "required": true,
+          "type": "text",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "engine",
+          "onChange": [Function],
+          "placeholder": "Engine",
+          "required": true,
+          "type": "text",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "topSpeed",
+          "onChange": [Function],
+          "placeholder": "Top Speed",
+          "required": true,
+          "type": "number",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "hP",
+          "onChange": [Function],
+          "placeholder": "HP",
+          "required": true,
+          "type": "number",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "transmission",
+          "onChange": [Function],
+          "placeholder": "Transmission",
+          "required": true,
+          "type": "text",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SUBMIT",
+          "className": "add-model-btn",
+          "disabled": true,
+        },
+        "ref": null,
+        "rendered": "SUBMIT",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <select
+            name="makeId"
+            onChange={[Function]}
+          />,
+          <input
+            name="modelName"
+            onChange={[Function]}
+            placeholder="Model Name"
+            required={true}
+            type="text"
+            value=""
+          />,
+          <input
+            name="body"
+            onChange={[Function]}
+            placeholder="Body"
+            required={true}
+            type="text"
+            value=""
+          />,
+          <input
+            name="engine"
+            onChange={[Function]}
+            placeholder="Engine"
+            required={true}
+            type="text"
+            value=""
+          />,
+          <input
+            name="topSpeed"
+            onChange={[Function]}
+            placeholder="Top Speed"
+            required={true}
+            type="number"
+            value=""
+          />,
+          <input
+            name="hP"
+            onChange={[Function]}
+            placeholder="HP"
+            required={true}
+            type="number"
+            value=""
+          />,
+          <input
+            name="transmission"
+            onChange={[Function]}
+            placeholder="Transmission"
+            required={true}
+            type="text"
+            value=""
+          />,
+          <button
+            className="add-model-btn"
+            disabled={true}
+          >
+            SUBMIT
+          </button>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "name": "makeId",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "modelName",
+            "onChange": [Function],
+            "placeholder": "Model Name",
+            "required": true,
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "body",
+            "onChange": [Function],
+            "placeholder": "Body",
+            "required": true,
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "engine",
+            "onChange": [Function],
+            "placeholder": "Engine",
+            "required": true,
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "topSpeed",
+            "onChange": [Function],
+            "placeholder": "Top Speed",
+            "required": true,
+            "type": "number",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "hP",
+            "onChange": [Function],
+            "placeholder": "HP",
+            "required": true,
+            "type": "number",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "transmission",
+            "onChange": [Function],
+            "placeholder": "Transmission",
+            "required": true,
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SUBMIT",
+            "className": "add-model-btn",
+            "disabled": true,
+          },
+          "ref": null,
+          "rendered": "SUBMIT",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
