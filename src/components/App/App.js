@@ -17,11 +17,8 @@ class App extends Component {
     this.fetchModels();
   }
 
-  fetchMakes = () => {
-    fetch(`${process.env.REACT_APP_DATABASE_API_URL}/api/v1/makes`)
-      .then(response => response.json())
-      .then(makes => this.setState({ makes }))
-      .catch(error => console.log(error.message));
+  updateModels = () => {
+    this.fetchModels();
   }
 
   fetchModels = () => {
