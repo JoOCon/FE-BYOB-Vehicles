@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SearchForm from '../SearchForm/SearchForm';
-import MakesContainer from '../MakesContainer/MakesContainer';
+import ModelsContainer from '../ModelsContainer/ModelsContainer';
 import './App.css';
 
 class App extends Component {
@@ -39,7 +39,7 @@ class App extends Component {
           <h1>Car Manager</h1>
           <SearchForm />
         </header>
-        <MakesContainer models={models} />
+        <ModelsContainer models={models} />
       </div>
     );
   }

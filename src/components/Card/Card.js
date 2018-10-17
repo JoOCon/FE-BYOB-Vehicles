@@ -20,10 +20,11 @@ class Card extends Component {
     const { ...model } = this.props;
 
     return (
-      <article className="make-card-cont">
+      <article className="model-card-cont">
         <h2 onClick={this.toggleInfo}>
           {model.model_name}
-          <div 
+        </h2>
+          <span
             className={displayInfo ? "display-model-info": "hidden"}
           >
             <p>
@@ -41,8 +42,8 @@ class Card extends Component {
             <p>
               Transmission: {model.transmission || 'null'}
             </p>
-          </div>
-        </h2>
+          </span>
+        
       </article>
     );
   }
