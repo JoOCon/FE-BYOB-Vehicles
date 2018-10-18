@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './AddModel.css';
+import PropTypes from 'prop-types';
 
 class AddModel extends Component {
   constructor() {
@@ -59,7 +60,6 @@ class AddModel extends Component {
   }
 
   postNewModel = (model) => {
-    console.log(model);
     fetch(`${process.env.REACT_APP_DATABASE_API_URL}/api/v1/models`, {
       method: 'POST',
       headers: {
@@ -87,12 +87,15 @@ class AddModel extends Component {
 
     return (
       <form onSubmit={this.handleSubmit}>
-        <select 
+        <label htmlFor="makeName">Make</label>
+        <select
+        id="makeName" 
         name="makeId"
         onChange={this.handleChange}
         >
           {listOptions}
         </select>
+        <button className="add-make">ADD MAKE</button>
         <input
           required
           type="text"
@@ -147,6 +150,10 @@ class AddModel extends Component {
       </form>
     );
   }
-}
+};
+
+AddModel.propTypes = {
+  updateModels: PropTypes.func
+};
 
 export default AddModel;
