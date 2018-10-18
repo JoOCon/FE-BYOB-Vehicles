@@ -19,5 +19,15 @@ describe('AddModel', () => {
 
       expect(wrapper.state().modelName).toBe('FF');
     });
+    it('should invoke handleChange when modelName is changed', () => {
+      const spy = spyOn(wrapper.instance(), 'handleChange');
+      const mockEvent = { target: { value: 'yes' } };
+      wrapper.instance().forceUpdate();
+      wrapper.find('.model-name-input').simulate('change', mockEvent);
+
+      expect(spy).toHaveBeenCalled();
+    });
+  });
+
   });
 });

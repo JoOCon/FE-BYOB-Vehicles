@@ -97,6 +97,7 @@ class AddModel extends Component {
         </select>
         <button className="add-make">ADD MAKE</button>
         <input
+          className="model-name-input"
           required
           type="text"
           placeholder="Model Name"
