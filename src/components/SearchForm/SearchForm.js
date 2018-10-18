@@ -20,10 +20,11 @@ class SearchForm extends Component {
     return (
       <form className="search-form">
         <input
+          className="search-input"
           type="text"
           name="name"
           value={name}
-          placeholder="Search model name"
+          placeholder="Search model"
           onChange={this.handleChange}
         />
         <button className="search-btn">Search</button>
