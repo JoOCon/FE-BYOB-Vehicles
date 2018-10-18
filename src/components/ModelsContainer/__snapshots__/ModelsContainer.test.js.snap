@@ -45,6 +45,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "deleteModel": undefined,
           "name": "garry",
         },
         "ref": null,
@@ -56,6 +57,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "deleteModel": undefined,
           "name": "billy",
         },
         "ref": null,
@@ -88,6 +90,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "deleteModel": undefined,
             "name": "garry",
           },
           "ref": null,
@@ -99,6 +102,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "deleteModel": undefined,
             "name": "billy",
           },
           "ref": null,
