@@ -29,5 +29,16 @@ describe('AddModel', () => {
     });
   });
 
+  describe('handleSubmit', () => {
+    it('should invoke handleSubmit onSubmit of form', () => {
+      const spy = spyOn(wrapper.instance(), 'handleSubmit');
+      const mockEvent = { preventDefault: jest.fn() };
+      wrapper.instance().forceUpdate();
+
+      wrapper.find('form').simulate('submit', mockEvent);
+
+      expect(spy).toHaveBeenCalled();
+    });
+
   });
 });
