@@ -34,6 +34,7 @@ ShallowWrapper {
           ADD MAKE
         </button>,
         <input
+          className="model-name-input"
           name="modelName"
           onChange={[Function]}
           placeholder="Model Name"
@@ -135,6 +136,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "model-name-input",
           "name": "modelName",
           "onChange": [Function],
           "placeholder": "Model Name",
@@ -265,6 +267,7 @@ ShallowWrapper {
             ADD MAKE
           </button>,
           <input
+            className="model-name-input"
             name="modelName"
             onChange={[Function]}
             placeholder="Model Name"
@@ -366,6 +369,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "model-name-input",
             "name": "modelName",
             "onChange": [Function],
             "placeholder": "Model Name",
