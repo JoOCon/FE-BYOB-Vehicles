@@ -18,11 +18,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <label
+          htmlFor="makeName"
+        >
+          Make
+        </label>,
         <select
+          id="makeName"
           name="makeId"
           onChange={[Function]}
         />,
+        <button
+          className="add-make"
+        >
+          ADD MAKE
+        </button>,
         <input
+          className="model-name-input"
           name="modelName"
           onChange={[Function]}
           placeholder="Model Name"
@@ -86,7 +98,20 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Make",
+          "htmlFor": "makeName",
+        },
+        "ref": null,
+        "rendered": "Make",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [],
+          "id": "makeName",
           "name": "makeId",
           "onChange": [Function],
         },
@@ -99,6 +124,19 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "ADD MAKE",
+          "className": "add-make",
+        },
+        "ref": null,
+        "rendered": "ADD MAKE",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "model-name-input",
           "name": "modelName",
           "onChange": [Function],
           "placeholder": "Model Name",
@@ -213,11 +251,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <label
+            htmlFor="makeName"
+          >
+            Make
+          </label>,
           <select
+            id="makeName"
             name="makeId"
             onChange={[Function]}
           />,
+          <button
+            className="add-make"
+          >
+            ADD MAKE
+          </button>,
           <input
+            className="model-name-input"
             name="modelName"
             onChange={[Function]}
             placeholder="Model Name"
@@ -281,7 +331,20 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "Make",
+            "htmlFor": "makeName",
+          },
+          "ref": null,
+          "rendered": "Make",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [],
+            "id": "makeName",
             "name": "makeId",
             "onChange": [Function],
           },
@@ -294,6 +357,19 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "ADD MAKE",
+            "className": "add-make",
+          },
+          "ref": null,
+          "rendered": "ADD MAKE",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "model-name-input",
             "name": "modelName",
             "onChange": [Function],
             "placeholder": "Model Name",
