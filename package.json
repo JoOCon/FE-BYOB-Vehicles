@@ -44,14 +44,5 @@
   "bugs": {
     "url": "https://github.com/chrisboylen/FE-BYOB-Vehicles/issues"
   },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/index.js",
-      "!src/reducers/index.js",
-      "!src/setupTests.js",
-      "!src/serviceWorker.js"
-    ]
-  },
   "homepage": "https://github.com/chrisboylen/FE-BYOB-Vehicles#readme"
 }

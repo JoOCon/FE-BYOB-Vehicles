@@ -1,7 +1,6 @@
 import React from 'react';
-import './ModelsContainer.css';
-import PropTypes from 'prop-types';
 import Card from '../Card/Card';
+import './ModelsContainer.css';
 
 const ModelsContainer = (props) => {
   const { deleteModel, models } = props;
@@ -17,11 +16,6 @@ const ModelsContainer = (props) => {
       {makesList}
     </section>
   );
-};
-
-ModelsContainer.propTypes = {
-  deleteModel: PropTypes.func,
-  models: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default ModelsContainer;
