@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Card.css';
 import deleteButton from '../../images/delete.svg';
+import PropTypes from 'prop-types';
 
 class Card extends Component {
   constructor() {
@@ -14,7 +15,7 @@ class Card extends Component {
     const { displayInfo } = this.state;
 
     this.setState({ displayInfo: !displayInfo })
-  }
+  };
 
   render() {
     const { displayInfo } = this.state;
@@ -35,29 +36,33 @@ class Card extends Component {
           onClick={() => deleteModel(model.id)}
           />
         </h2>
-          <span
-            className={displayInfo ? "display-model-info": "hidden"}
-          >
-            <p>
-              Body: {model.body || 'null'}
-            </p>
-            <p>
-              Engine: {model.engine || 'null'}
-            </p>
-            <p>
-              Top Speed: {model.top_speed || 'null'}
-            </p>
-            <p>
-              HP: {model.horse_power || 'null'}
-            </p>
-            <p>
-              Transmission: {model.transmission || 'null'}
-            </p>
-          </span>
-        
+        <span
+          className={displayInfo ? "display-model-info": "hidden"}
+        >
+          <p>
+            Body: {model.body || 'null'}
+          </p>
+          <p>
+            Engine: {model.engine || 'null'}
+          </p>
+          <p>
+            Top Speed: {model.top_speed || 'null'}
+          </p>
+          <p>
+            HP: {model.horse_power || 'null'}
+          </p>
+          <p>
+            Transmission: {model.transmission || 'null'}
+          </p>
+        </span>
       </article>
     );
   }
-}
+};
+
+Card.propTypes = {
+  deleteModel: PropTypes.func,
+  model: PropTypes.object
+};
 
 export default Card;
