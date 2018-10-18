@@ -18,6 +18,7 @@ describe('Card', () => {
 
     expect(mockDeleteModel).toHaveBeenCalled();
   });
+
   describe('TOGGLEINFO', () => {
     it('should set state when invoked', () => {
       const wrapper = shallow(<Card />);
