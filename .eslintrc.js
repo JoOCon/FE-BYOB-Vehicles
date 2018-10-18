@@ -6,6 +6,10 @@ module.exports = {
         "react/require-default-props": "off"
     },
     "env": {
+        "browser": true,
+        "mocha": true,
+        "node": true,
+        "es6": true,
         "jest": true
     }
 };
