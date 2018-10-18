@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './AddModel.css';
+import PropTypes from 'prop-types';
 
 class AddModel extends Component {
   constructor() {
@@ -203,6 +204,10 @@ class AddModel extends Component {
       </div>
     );
   }
-}
+};
+
+AddModel.propTypes = {
+  updateModels: PropTypes.func
+};
 
 export default AddModel;
