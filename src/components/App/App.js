@@ -30,8 +30,14 @@ class App extends Component {
 
   handleFormDisplay = () => {
     const { toggleForm } = this.state;
-    
     this.setState({ toggleForm: !toggleForm })
+  }
+
+  handleSearch = (input) => {
+    const searchedArray = this.state.models.filter(model => (
+      model.model_name.search(input) === 0)
+    );
+    this.setState({models: searchedArray})
   }
 
   render() {
@@ -40,7 +46,7 @@ class App extends Component {
       <div className="App">
         <header>
           <h1>Car Manager</h1>
-          <SearchForm />
+          <SearchForm handleSearch={this.handleSearch} />
           <button 
             className="toggle-btn"
             onClick={this.handleFormDisplay}
