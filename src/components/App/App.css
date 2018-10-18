@@ -1,16 +1,28 @@
+.App {
+  background-color: #354f60d4;
+  height: 100vh;
+}
+
 header {
   align-items: center;
-  background-color: #ff9c9c;
+  background-color: #004673;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 h1 {
-  color: #151f34;
+  color: #ff5b5b;
   font-family: 'Ubuntu', sans-serif;
   font-size: 4rem;
   margin: 0;
-  padding: 1rem;
-  }
+  padding: .5rem 1rem;
+}
 
+.toggle-btn {
+  background-color: #c0e6ff;
+}
 
+.toggle-btn:hover {
+  background-color: #009aff;
+  color: #ffdddd;
+}
