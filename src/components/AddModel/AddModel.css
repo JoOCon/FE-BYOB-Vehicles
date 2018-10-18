@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+select, .add-make, input {
+  width: 8rem;
+}
+
+input {
+  display: block;
+}
