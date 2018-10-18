@@ -1,5 +1,6 @@
 .model-card-cont {
-  background-color: #c0e6ff;
+  background-color: #f5fafde0;
+  ;
   border: solid 3px #c0e6ff;
   border-radius: 5px;
   height: fit-content;
@@ -8,13 +9,33 @@
   padding: 0;
 }
 
-h2 {
+h2, .h2-span {
+  align-items: baseline;
   background-color: #c0e6ff;
   border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   min-height: 6.5rem;
   padding: .5rem;
 }
+
+h2:hover {
+  color: #ff5b5b;
+}
+
+img {
+  cursor: pointer;
+  height: 1rem;
+  transition: transform .8s ease-in-out;
+}
+
+img:hover {
+  transform: rotate(90deg);
+  height: 1.2rem;
+}
+
 span {
   background-color: white;
 }

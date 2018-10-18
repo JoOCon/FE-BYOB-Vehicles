@@ -3,10 +3,11 @@ import Card from '../Card/Card';
 import './ModelsContainer.css';
 
 const ModelsContainer = (props) => {
-  const { models } = props;
+  const { deleteModel, models } = props;
   const makesList = models.map(model => (
     <Card
       {...model}
+      deleteModel={deleteModel}
       key={model.id}
     />
   ));

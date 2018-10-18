@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Card.css';
+import deleteButton from '../../images/delete.svg';
 
 class Card extends Component {
   constructor() {
@@ -17,12 +18,22 @@ class Card extends Component {
 
   render() {
     const { displayInfo } = this.state;
-    const { ...model } = this.props;
+    const { deleteModel, ...model } = this.props;
 
     return (
-      <article className="model-card-cont">
-        <h2 onClick={this.toggleInfo}>
-          {model.model_name}
+      <article className="model-card-cont" id={model.id}>
+        <h2>
+          <span 
+            onClick={this.toggleInfo}
+            className="h2-span"
+          >
+            {model.model_name}
+          </span>
+        <img 
+          src={deleteButton} 
+          alt="delete-btn" 
+          onClick={() => deleteModel(model.id)}
+          />
         </h2>
           <span
             className={displayInfo ? "display-model-info": "hidden"}
