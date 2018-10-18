@@ -11,22 +11,27 @@ class SearchForm extends Component {
 
   handleChange = (e) => {
     const { name, value } = e.target;
-
     this.setState({ [name]: value })
   };
 
+  handleSubmit = (e) => {
+    e.preventDefault()
+    this.props.handleSearch(this.state.input)
+    this.setState({input: ''})
+  }
+
   render() {
-    const { name } = this.state;
+    const { input } = this.state;
     return (
-      <form className="search-form">
+      <form className="search-form" onSubmit={this.handleSubmit}>
         <input
           type="text"
-          name="name"
-          value={name}
+          name="input"
+          value={input}
           placeholder="Search model name"
           onChange={this.handleChange}
         />
-        <button className="search-btn">Search</button>
+        <button>Search</button>
       </form>
     );
   }
