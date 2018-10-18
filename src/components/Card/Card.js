@@ -36,6 +36,17 @@ class Card extends Component {
           onClick={() => deleteModel(model.id)}
           />
         </h2>
+          <span
+            className={displayInfo ? "display-model-info": "hidden"}
+          >
+            {model.model_name}
+          </span>
+        <img 
+          src={deleteButton} 
+          alt="delete-btn" 
+          onClick={() => deleteModel(model.id)}
+          />
+        </h2>
         <span
           className={displayInfo ? "display-model-info": "hidden"}
         >

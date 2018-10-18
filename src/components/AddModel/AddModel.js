@@ -113,6 +113,26 @@ class AddModel extends Component {
       <option key={make.id} value={make.id}>{make.make_name}</option>
     ));
 
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label htmlFor="makeName">Make</label>
+        <select
+        id="makeName" 
+        name="makeId"
+        onChange={this.handleChange}
+        >
+          {listOptions}
+        </select>
+        <button className="add-make">ADD MAKE</button>
+        <input
+          required
+          type="text"
+          placeholder="Model Name"
+          name="modelName"
+          value={modelName}
+          onChange={this.handleChange}
+        />
+      
     const checkForModelInput = makeId === '' || modelName === '' || body === '' || engine === '' || topSpeed === '' || hP === '' || transmission === '';
     const checkForMakeInput = makesName === '' || manufacturer === '';
 
