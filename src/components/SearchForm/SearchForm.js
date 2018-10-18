@@ -32,7 +32,7 @@ class SearchForm extends Component {
           placeholder="Search model"
           name="input"
           value={input}
-          placeholder="Search model name"
+          placeholder="Search model"
           onChange={this.handleChange}
         />
         <button>Search</button>

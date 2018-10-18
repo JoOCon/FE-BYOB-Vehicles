@@ -52,6 +52,16 @@ class App extends Component {
     this.setState({models: searchedArray})
   }
 
+  deleteModel = (id) => {
+    const { models } = this.state;
+    const foundModel = models.find(model => model.id === id);
+    const updatedModels = models.filter(model => model !== foundModel);
+    fetch(`${process.env.REACT_APP_DATABASE_API_URL}/api/v1/models/${id}`, {
+      method: 'DELETE',
+    })
+    this.setState({ models: updatedModels });
+  }
+
   render() {
     const { models, toggleForm } = this.state;
     return (
