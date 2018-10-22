@@ -17,107 +17,19 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <header>
-          <h1>
-            Car Manager
-          </h1>
-          <SearchForm />
-          <button
-            className="toggle-btn"
-            onClick={[Function]}
-          >
-            Add
-          </button>
-        </header>,
-        <ModelsContainer
-          deleteModel={[Function]}
-          models={Array []}
-        />,
-        <div />,
-      ],
+      "children": <SearchForm />,
       "className": "App",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h1>
-              Car Manager
-            </h1>,
-            <SearchForm />,
-            <button
-              className="toggle-btn"
-              onClick={[Function]}
-            >
-              Add
-            </button>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Car Manager",
-            },
-            "ref": null,
-            "rendered": "Car Manager",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Add",
-              "className": "toggle-btn",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "Add",
-            "type": "button",
-          },
-        ],
-        "type": "header",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "deleteModel": [Function],
-          "models": Array [],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": "div",
-      },
-    ],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -126,107 +38,19 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <header>
-            <h1>
-              Car Manager
-            </h1>
-            <SearchForm />
-            <button
-              className="toggle-btn"
-              onClick={[Function]}
-            >
-              Add
-            </button>
-          </header>,
-          <ModelsContainer
-            deleteModel={[Function]}
-            models={Array []}
-          />,
-          <div />,
-        ],
+        "children": <SearchForm />,
         "className": "App",
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                Car Manager
-              </h1>,
-              <SearchForm />,
-              <button
-                className="toggle-btn"
-                onClick={[Function]}
-              >
-                Add
-              </button>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Car Manager",
-              },
-              "ref": null,
-              "rendered": "Car Manager",
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Add",
-                "className": "toggle-btn",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "Add",
-              "type": "button",
-            },
-          ],
-          "type": "header",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "deleteModel": [Function],
-            "models": Array [],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "div",
-        },
-      ],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       "type": "div",
     },
   ],

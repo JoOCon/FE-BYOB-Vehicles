@@ -76,7 +76,7 @@ class AddModel extends Component {
     const newMake = { make_name: makeName, manufacturer };
     this.postNewMake(newMake);
     this.fetchMakes();
-    this.setState({toggleForm: false, makeName: '', manufacturer: ''});
+    this.setState({ toggleForm: false, makeName: '', manufacturer: '' });
   }
 
   postNewMake = (make) => {
@@ -91,7 +91,7 @@ class AddModel extends Component {
 
   handleToggleForm = () => {
     const { toggleForm } = this.state
-    this.setState({toggleForm: !toggleForm})
+    this.setState({ toggleForm: !toggleForm })
   }
 
   render() {
@@ -113,31 +113,10 @@ class AddModel extends Component {
       <option key={make.id} value={make.id}>{make.make_name}</option>
     ));
 
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="makeName">Make</label>
-        <select
-        id="makeName" 
-        name="makeId"
-        onChange={this.handleChange}
-        >
-          {listOptions}
-        </select>
-        <button className="add-make">ADD MAKE</button>
-        <input
-          className="model-name-input"
-          required
-          type="text"
-          placeholder="Model Name"
-          name="modelName"
-          value={modelName}
-          onChange={this.handleChange}
-        />
-      
     const checkForModelInput = makeId === '' || modelName === '' || body === '' || engine === '' || topSpeed === '' || hP === '' || transmission === '';
     const checkForMakeInput = makesName === '' || manufacturer === '';
 
-    const displayMakeForm = toggleForm ? 
+    const displayMakeForm = toggleForm ?
       <form onSubmit={this.handleSubmitMake}>
         <input
           required
@@ -161,9 +140,9 @@ class AddModel extends Component {
 
     return (
       <div>
-        <select 
-        name="makeId"
-        onChange={this.handleChange}
+        <select
+          name="makeId"
+          onChange={this.handleChange}
         >
           {listOptions}
         </select>

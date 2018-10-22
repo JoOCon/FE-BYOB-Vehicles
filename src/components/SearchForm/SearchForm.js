@@ -27,12 +27,9 @@ class SearchForm extends Component {
         <input
           className="search-input"
           type="text"
-          name="name"
-          value={name}
-          placeholder="Search model"
           name="input"
           value={input}
-          placeholder="Search model name"
+          placeholder="Search model"
           onChange={this.handleChange}
         />
         <button>Search</button>
